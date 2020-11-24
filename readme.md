@@ -189,3 +189,5 @@
     > playerMemoryError: Explicado acima. Deve ser utilizado junto a classe acima, porém com elementos diferentes.
 
     > memoryActive: Classe com uma animação que cria um fundo azul no elemento da grade do painel a esquerda (lado computador) e que deve ser removida logo após 600ms com setTimeout.
+    
+    > playerActive: Não tem estilização, apenas serve para criar uma condição no clique do efeito "playermemoryClick", caso ele exista, o player pode clicar.
