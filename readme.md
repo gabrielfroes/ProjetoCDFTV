@@ -20,7 +20,7 @@
         }
 ### Utilize o setTimeout para criar o efeito de sumir após 600ms, caso não utilze o setTimeout com 600ms, a animação não poderá ser utilizada de novo e ocasionará erro.
 
-### No exemplo utlizado foi usado a squat.children[4]
+### No exemplo utlizado foi usado a square.children[4]
 <img src="https://media.giphy.com/media/SU4gRcGmULNJxDRXCb/giphy.gif" width='300px'>
 <br>
 <br>
