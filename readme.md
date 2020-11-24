@@ -1,6 +1,9 @@
+<a href="https://www.linkedin.com/in/imerik1/"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" width="32"></a>
+<a href="https://www.twitch.tv/eker1"><img src="https://pngimg.com/uploads/twitch/twitch_PNG49.png" width="32"></a>
+<a href="https://www.youtube.com/channel/UCK6ma51tX_xvk47cMZPaaMA?view_as=subscriber"><img src="https://juniorsilveira.com.br/wp-content/uploads/2019/03/youtube-logo-in-png-26.png" width="32"></a>
 # COMO USAR
 
-## CRIAÇÃO DA COMBINAÇÃO (Lado computador)
+## CRIAÇÃO DA COMBINAÇÃO (Lado Computador)
 
     > let square = document.querySelector(".painelMemory");
 
@@ -25,7 +28,7 @@
 <br>
 <br>
 
-## AO ERRAR A COMBINAÇÃO
+## AO ERRAR A COMBINAÇÃO (Lado Jogador)
 
     > let square = document.querySelector(".playerMemory");
     > let circles = document.querySelector(".circlesRight");
@@ -85,7 +88,7 @@
 <br>
 <br>
 
-## BOTÕES VERDES SIMULANDO NIVEL
+## BOTÕES VERDES SIMULANDO NIVEL (Especialmente lado computador, mas aplicável a mesma regra para o lado Jogador)
     > let circles = document.querySelector(".circles")
 ### Sendo i de 0 a 4, adiciona o fundo verde no circulo
     > circles.children[i].classList.add("circleActive");
@@ -103,7 +106,7 @@
 <br>
 <br>
 
-## ATIVAR PAINEL PARA JOGADOR CLICAR
+## ATIVAR PAINEL PARA JOGADOR CLICAR (Lado Jogador)
 
     > let square = document.querySelector(".playerMemory");
     > square.classList.add('playerActive')
