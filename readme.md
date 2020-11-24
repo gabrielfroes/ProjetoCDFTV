@@ -2,20 +2,20 @@
 
 ## CRIAÇÃO DA COMBINAÇÃO (Lado computador)
 
-    > let squat = document.querySelector(".painelMemory");
+    > let square = document.querySelector(".painelMemory");
 
 ### Sendo i o valor da div selecionada indo de 0 a 8
 
 ### Classe "memoryActive" cria um fundo azul na div selecionada.
-    > squat.children[i].classList.add("memoryActive");
+    > square.children[i].classList.add("memoryActive");
 
 ### Ao todo ficaria assim:
 
     >   function memory() {
-            let squat = document.querySelector(".painelMemory");
-            squat.children[i].classList.add("memoryActive");
+            let square = document.querySelector(".painelMemory");
+            square.children[i].classList.add("memoryActive");
             setTimeout(() => {
-                squat.children[i].classList.remove("memoryActive");
+                square.children[i].classList.remove("memoryActive");
             }, 600);
         }
 ### Utilize o setTimeout para criar o efeito de sumir após 600ms, caso não utilze o setTimeout com 600ms, a animação não poderá ser utilizada de novo e ocasionará erro.
@@ -27,14 +27,14 @@
 
 ## AO ERRAR A COMBINAÇÃO
 
-    > let squat = document.querySelector(".playerMemory");
+    > let square = document.querySelector(".playerMemory");
     > let circles = document.querySelector(".circlesRight");
 
 ### Percorre todos os elementos para criar o fundo vermelho e animação piscando
 
-    for (var i = 0; i < squat.children.length; i++) {
-        if (squat.children[i].tagName == "DIV")
-            squat.children[i].classList.add("playerMemoryError");
+    for (var i = 0; i < square.children.length; i++) {
+        if (square.children[i].tagName == "DIV")
+            square.children[i].classList.add("playerMemoryError");
     }
     for (var i = 0; i < circles.children.length; i++) {
         if (circles.children[i].tagName == "DIV")
@@ -46,9 +46,9 @@
 #### Aconselho não mudar o valor do setTimeout
 
     > setTimeout(() => {
-        for (var i = 0; i < squat.children.length; i++) {
-            if (squat.children[i].tagName == "DIV")
-                squat.children[i].classList.remove("playerMemoryError");
+        for (var i = 0; i < square.children.length; i++) {
+            if (square.children[i].tagName == "DIV")
+                square.children[i].classList.remove("playerMemoryError");
         }
         for (var i = 0; i < circles.children.length; i++) {
             if (circles.children[i].tagName == "DIV")
@@ -58,21 +58,21 @@
 
 ### Ao todo ficaria assim:
     >   function error() {
-            let squat = document.querySelector(".playerMemory");
+            let square = document.querySelector(".playerMemory");
             let circles = document.querySelector(".circlesRight");
 
-            for (var i = 0; i < squat.children.length; i++) {
-                if (squat.children[i].tagName == "DIV")
-                    squat.children[i].classList.add("playerMemoryError");
+            for (var i = 0; i < square.children.length; i++) {
+                if (square.children[i].tagName == "DIV")
+                    square.children[i].classList.add("playerMemoryError");
             }
             for (var i = 0; i < circles.children.length; i++) {
                 if (circles.children[i].tagName == "DIV")
                     circles.children[i].classList.add("playerCircleError");
             }
             setTimeout(() => {
-                for (var i = 0; i < squat.children.length; i++) {
-                if (squat.children[i].tagName == "DIV")
-                    squat.children[i].classList.remove("playerMemoryError");
+                for (var i = 0; i < square.children.length; i++) {
+                if (square.children[i].tagName == "DIV")
+                    square.children[i].classList.remove("playerMemoryError");
                 }
                 for (var i = 0; i < circles.children.length; i++) {
                 if (circles.children[i].tagName == "DIV")
@@ -105,12 +105,12 @@
 
 ## ATIVAR PAINEL PARA JOGADOR CLICAR
 
-    > let squat = document.querySelector(".playerMemory");
-    > squat.classList.add('playerActive')
+    > let square = document.querySelector(".playerMemory");
+    > square.classList.add('playerActive')
 ### Ativa o fundo mais claro e o ponteiro do cursor fica "clicável"
-    >   for (var i = 0; i < squat.children.length; i++) {
-            if (squat.children[i].tagName == "DIV")
-                squat.children[i].classList.add("playerMemoryActive");
+    >   for (var i = 0; i < square.children.length; i++) {
+            if (square.children[i].tagName == "DIV")
+                square.children[i].classList.add("playerMemoryActive");
         }
 ### Seleciona todos as divs da grade do painel do jogador indo de 0 a 8
     >   let memory = document.getElementsByClassName("player_memory");
@@ -118,7 +118,7 @@
 ### Cria a animação de clique suave mudando para o fundo azul suavemente
     >   Array.prototype.forEach.call(memory, function (element) {
             element.addEventListener("click", function () {
-            if (squat.classList.contains("playerActive")) {
+            if (square.classList.contains("playerActive")) {
                 console.log("O valor do elemento clicado é: " + element.dataset.memory);
                 element.style.animation = "playermemoryClick .4s";
                 setTimeout(() => {
@@ -141,17 +141,17 @@
 
 ### A função completa ficaria assim:
     function active() {
-        let squat = document.querySelector(".playerMemory");
+        let square = document.querySelector(".playerMemory");
         let memory = document.getElementsByClassName("player_memory");
-        squat.classList.add('playerActive')
-        for (var i = 0; i < squat.children.length; i++) {
-            if (squat.children[i].tagName == "DIV")
-            squat.children[i].classList.add("playerMemoryActive");
+        square.classList.add('playerActive')
+        for (var i = 0; i < square.children.length; i++) {
+            if (square.children[i].tagName == "DIV")
+            square.children[i].classList.add("playerMemoryActive");
         }
 
         Array.prototype.forEach.call(memory, function (element) {
             element.addEventListener("click", function () {
-            if (squat.classList.contains("playerActive")) {
+            if (square.classList.contains("playerActive")) {
                 console.log("O valor do elemento clicado é: " + element.dataset.memory);
                 element.style.animation = "playermemoryClick .4s";
                 setTimeout(() => {
@@ -162,10 +162,10 @@
         });
 
         setTimeout(() => {
-            squat.classList.remove('playerActive')
-            for (var i = 0; i < squat.children.length; i++) {
-            if (squat.children[i].tagName == "DIV")
-                squat.children[i].classList.remove("playerMemoryActive");
+            square.classList.remove('playerActive')
+            for (var i = 0; i < square.children.length; i++) {
+            if (square.children[i].tagName == "DIV")
+                square.children[i].classList.remove("playerMemoryActive");
             }
         }, 8000);
     }
