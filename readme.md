@@ -4,7 +4,7 @@
 <br>
 <br>
 
-## Antes de tudo quero agradecer ao <a href="https://www.linkedin.com/in/gabrielfroes/?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging%3BfI6d3GHsSUCbM5gKk5aM0Q%3D%3D">Gabriel Fróes</a> pela oportunidade.
+## Antes de tudo, quero agradecer ao <a href="https://www.linkedin.com/in/gabrielfroes/?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging%3BfI6d3GHsSUCbM5gKk5aM0Q%3D%3D">Gabriel Fróes</a> pela oportunidade.
 
 
 # COMO USAR
